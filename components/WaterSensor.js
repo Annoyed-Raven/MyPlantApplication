@@ -5,9 +5,7 @@ export default function WaterSensor(props) {
   const [isWatered, setWatered] = useState(false);
 
   const handleWater = () => {
-    console.log(isWatered);
     setWatered(true);
-    console.log(isWatered);
   };
 
   return (
@@ -22,12 +20,6 @@ export default function WaterSensor(props) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
   sensorUnwatered: {
     backgroundColor: "green",
     width: 100,
